@@ -1,0 +1,9 @@
+{% if ticket_number != 0 %}
+<div>Ticket #{{ ticket_number }}</div>
+{% else %}
+<div>Waiting for the next client</div>
+{% endif %}
+
+<a href="/menu">Back to Menu</a>
+<br>
+<a href="/processing">Back to Processing</a>

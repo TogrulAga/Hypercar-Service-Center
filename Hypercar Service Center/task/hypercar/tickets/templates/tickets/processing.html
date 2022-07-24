@@ -1,0 +1,9 @@
+<div>Change oil queue: {{ n_change_oil }}</div>
+<div>Inflate tires queue: {{ n_inflate_tires }}</div>
+<div>Get diagnostic queue: {{ n_diagnostic }}</div>
+
+<form method="post">{% csrf_token %}
+  <button type="submit">Process next</button>
+</form>
+
+<a href="/menu">Back to Menu</a>
